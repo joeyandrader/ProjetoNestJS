@@ -1,7 +1,7 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { CreateUSerDto } from './dtos/createUser.dto';
 import { UserService } from './user.service';
-import { User } from './Interfaces/user.interface';
+import { UserEntity } from './Interfaces/user.entity';
 
 @Controller('user')
 export class UserController {
@@ -16,7 +16,7 @@ export class UserController {
     }
 
     @Get()
-    async GetAllUser(): Promise<User[]> {
+    async GetAllUser(): Promise<UserEntity[]> {
         return this.userService.getAllUser();
     }
 }

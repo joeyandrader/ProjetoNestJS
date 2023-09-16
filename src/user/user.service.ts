@@ -19,6 +19,7 @@ export class UserService {
         const passwordHash = await bcrypt.hash(createUSerDto.password, saltOrRounds)
         return await this.userRepository.save({
             ...createUSerDto,
+            type_user: 1,
             password: passwordHash
         })
     }

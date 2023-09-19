@@ -11,10 +11,10 @@ export class CityEntity {
     @Column({ name: 'state_id', nullable: false })
     stateId: number;
 
-   
+
     @Column({ name: 'created_at' })
     created_at: Date;
 
-    @Column({ name: 'update_at' })
+    @Column({ name: 'updated_at' })
     update_at: Date;
 }

@@ -18,7 +18,7 @@ export class AddressEntity {
     numberAddress: number;
 
     @Column({ name: 'complement', nullable: true })
-    complement: number;
+    complement: string;
 
     @Column({ name: 'user_id', nullable: false })
     userId: number;
@@ -29,6 +29,6 @@ export class AddressEntity {
     @Column({ name: 'created_at' })
     created_at: Date;
 
-    @Column({ name: 'update_at' })
-    update_at: Date;
+    @Column({ name: 'updated_at' })
+    updated_at: Date;
 }

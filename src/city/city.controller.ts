@@ -5,7 +5,9 @@ import { CityService } from './city.service';
 @Controller('city')
 export class CityController {
 
-    constructor(private readonly cityService: CityService) { }
+    constructor(
+        private readonly cityService: CityService
+    ) { }
 
     @Get('/:stateId')
     async getAllCitiesByStateId(@Param('stateId') stateId: number): Promise<CityEntity[]> {

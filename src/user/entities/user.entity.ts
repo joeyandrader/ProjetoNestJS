@@ -1,5 +1,5 @@
 import { AddressEntity } from "src/address/entities/address.entity";
-import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn, Unique } from "typeorm";
 
 @Entity({ name: 'user' })
 export class UserEntity {
